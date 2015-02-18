@@ -1,0 +1,23 @@
+<head>
+    <title>offline</title>
+</head>
+
+<body>
+    <h1>Koperasi ONLINE</h1>
+
+    {{> hello}}
+</body>
+
+<template name="hello">
+    <button>Add Post</button>
+    <hr/>
+    <div id="search-meta">
+      {{#if isLoading}}
+        searching ...
+      {{/if}}
+    </div>
+    
+    {{#each getPosts}}
+    <p>{{{name}}}</p>
+    {{/each}}
+</template>

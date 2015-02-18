@@ -1,0 +1,17 @@
+<head>
+    <title>offline</title>
+</head>
+
+<body>
+    <h1>Koperasi OFFLINE</h1>
+
+    {{> hello}}
+</body>
+
+<template name="hello">
+    <button>Add Post</button>
+    <hr/>
+    {{#each posts}}
+    <p>{{name}}</p>
+    {{/each}}
+</template>
